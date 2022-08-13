@@ -1,0 +1,24 @@
+class Car:
+    def __init__(self,name,model,colour):
+        self.name=name
+        self.model=model
+        self.colour=colour
+    def getInfo(self):
+        print("Car name:",self.name)
+        print("Car model:",self.model)
+        print("Car colour:",self.colour)
+
+class Employee:
+    def __init__(self,ename,eno,car):
+        self.ename=ename
+        self.eno=eno
+        self.car=car
+    def empInfo(self):
+        print('employee number:',self.eno)
+        print('employee name:',self.ename)
+        print('car information....')
+        self.car.getInfo()
+
+car=Car("mustang","1967 GT","black")
+e=Employee("advsaikumar",9,car)
+e.empInfo()
